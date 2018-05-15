@@ -31,7 +31,10 @@ public class TestService {
         PhoneNumbers phone2 = new PhoneNumbers("76543217");
 
         user1.getPhoneNumbers().add(phone1);
+        phone1.setUser(user1);
+
         user2.getPhoneNumbers().add(phone2);
+        phone2.setUser(user2);
 
         List<User> users = new ArrayList<>(2);
         users.add(user1);
